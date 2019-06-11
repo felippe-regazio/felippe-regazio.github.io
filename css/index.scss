@@ -1,9 +1,9 @@
 html body {
 
 	--text-color: #000000;
-	--primary-color: #acceac;
-	--secondary-color: #567c56;
-	--highlight-color: #9a009a;
+	--primary-color: #f7fdfc;
+	--secondary-color: #00c2c7;
+	--highlight-color: #00c2c7;
 
 	$gutter: 14px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -377,6 +377,7 @@ html body {
 					height: 100%;
 					padding: $gutter;
 					text-align: center;
+					font-size: 20px;
 					img {
 						height: 60px;
 						opacity: .7;
