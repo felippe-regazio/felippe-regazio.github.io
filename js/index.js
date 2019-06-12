@@ -1,7 +1,6 @@
 (function(){
 	// swiper
 	document.querySelectorAll('.swiper-container').forEach(function (s) {
-		if (window.innerWidth <= 425) options.centeredSlides = true;
 		var options = {
 			spaceBetween: 28,
 			grabCursor: true,
@@ -10,6 +9,7 @@
 				clickable:true
 			},
 		}
+		if (window.innerWidth <= 425) options.centeredSlides = true;
 		new Swiper(s, options);
 	});
 	// activate last skin or blue
@@ -26,13 +26,6 @@
 			document.body.dataset.skin = currentSkin;
 		});
 		color.addEventListener('click', function (e) {
-			document.querySelector('[data-skin-pick].active').classList.remove('active');
-			color.classList.add('active');
-			currentSkin = color.dataset.skinPick;
-			localStorage.setItem('felipperegaziocv', currentSkin);
-			document.body.dataset.skin = currentSkin;
-		});
-		color.addEventListener('touchstart', function (e) {
 			document.querySelector('[data-skin-pick].active').classList.remove('active');
 			color.classList.add('active');
 			currentSkin = color.dataset.skinPick;
