@@ -186,39 +186,33 @@ html body {
 								border-radius: 100%;
 								border: solid 3px;
 								background-color: transparent;
-								transition: 200ms;
 								&[data-skin-pick="blue"] {
 									border-color: #00c2c7;
 									&.active{
-										transition: 200ms;
 										background-color: #00c2c7;
 									}
 								}
 								&[data-skin-pick="green"] {
 									border-color: #008000;
 									&.active{
-										transition: 200ms;
 										background-color: #008000;
 									}
 								}
 								&[data-skin-pick="purple"] {
 									border-color: #A020F0;
 									&.active{
-										transition: 200ms;
 										background-color: #A020F0;
 									}
 								}
 								&[data-skin-pick="dark"] {
 									border-color: #000000;
 									&.active{
-										transition: 200ms;
 										background-color: #000000;
 									}
 								}
 								&[data-skin-pick="light"] {
 									border-color: #cccccc;
 									&.active{
-										transition: 200ms;
 										background-color: #cccccc;
 									}
 								}
