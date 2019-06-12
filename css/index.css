@@ -1,9 +1,29 @@
 html body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html body[data-skin=blue] {
   --text-color: #000000;
-  --primary-color: #f4fdff;
+  --primary-color: #ecfafa;
   --secondary-color: #00c2c7;
   --highlight-color: #00c2c7;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html body[data-skin=purple] {
+  --text-color: #000000;
+  --primary-color: #f3e7f3;
+  --secondary-color: #A020F0;
+  --highlight-color: #A020F0;
+}
+html body[data-skin=green] {
+  --text-color: #000000;
+  --primary-color: #d6ead6;
+  --secondary-color: #008000;
+  --highlight-color: #008000;
+}
+html body[data-skin=light] {
+  --primary-color: #f6f6f6;
+  --secondary-color: #333333;
+  --highlight-color: #888888;
+  --text-color: #000000;
 }
 html body * {
   box-sizing: border-box;
@@ -152,6 +172,60 @@ html body .main .entrance .first-sight .about ul li a {
   html body .main .entrance .first-sight .about ul li {
     display: none;
   }
+}
+html body .main .entrance .first-sight .about .color-picker p {
+  margin-bottom: 28px;
+}
+html body .main .entrance .first-sight .about .color-picker ul {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+html body .main .entrance .first-sight .about .color-picker ul li {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: solid 3px;
+  background-color: transparent;
+  transition: 200ms;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=blue] {
+  border-color: #00c2c7;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=blue].active {
+  transition: 200ms;
+  background-color: #00c2c7;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=green] {
+  border-color: #008000;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=green].active {
+  transition: 200ms;
+  background-color: #008000;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=purple] {
+  border-color: #A020F0;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=purple].active {
+  transition: 200ms;
+  background-color: #A020F0;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=dark] {
+  border-color: #000000;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=dark].active {
+  transition: 200ms;
+  background-color: #000000;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=light] {
+  border-color: #cccccc;
+}
+html body .main .entrance .first-sight .about .color-picker ul li[data-skin-pick=light].active {
+  transition: 200ms;
+  background-color: #cccccc;
 }
 html body .main .entrance .first-sight .timeline ul {
   padding: 14px;
@@ -457,6 +531,31 @@ html body footer .footer__content p {
   html body footer {
     display: none;
   }
+}
+html body[data-skin=dark] {
+  --text-color: #ffffff;
+  --primary-color: #000000;
+  --secondary-color: #333333;
+  --highlight-color: #000000;
+  background-color: #333333;
+}
+html body[data-skin=dark] * {
+  color: #f1f1f1 !important;
+  border-color: #000000;
+}
+html body[data-skin=dark] .entrance .first-sight .timeline ul .xp__right::before {
+  background-color: #000000;
+}
+html body[data-skin=dark] .hobbies__content .hb-item img,
+html body[data-skin=dark] .entrance .first-sight .about ul li img,
+html body[data-skin=dark] .entrance .presentation__body ul li img {
+  filter: invert(1);
+}
+html body[data-skin=dark] .entrance .first-sight .timeline ul .xp__right {
+  border-color: #000000;
+}
+html body[data-skin=dark] footer {
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */

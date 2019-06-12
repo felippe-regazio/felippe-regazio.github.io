@@ -1,9 +1,32 @@
 html body {
 
-	--text-color: #000000;
-	--primary-color: #f4fdff;
-	--secondary-color: #00c2c7;
-	--highlight-color: #00c2c7;
+	&[data-skin="blue"] {
+		--text-color: #000000;
+		--primary-color: #ecfafa;
+		--secondary-color: #00c2c7;
+		--highlight-color: #00c2c7;
+	}
+
+	&[data-skin="purple"] {
+		--text-color: #000000;
+		--primary-color: #f3e7f3;
+		--secondary-color: #A020F0;
+		--highlight-color: #A020F0;
+	}
+
+	&[data-skin="green"] {
+		--text-color: #000000;
+		--primary-color: #d6ead6;
+		--secondary-color: #008000;
+		--highlight-color: #008000;
+	}
+
+	&[data-skin="light"] {
+		--primary-color: #f6f6f6;
+		--secondary-color: #333333;
+		--highlight-color: #888888;
+		--text-color: #000000;
+	}
 
 	$gutter: 14px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -143,6 +166,62 @@ html body {
 							display: block;
 							li {
 								display: none;
+							}
+						}
+					}
+					.color-picker {
+						p {
+							margin-bottom: $gutter*2;
+						}
+						ul {
+							display: flex;
+							align-items: center;
+							justify-content: initial;
+							overflow: hidden;
+							margin-bottom: $gutter;
+							li {
+								height: 30px;
+								width: 30px;
+								cursor: pointer;
+								border-radius: 100%;
+								border: solid 3px;
+								background-color: transparent;
+								transition: 200ms;
+								&[data-skin-pick="blue"] {
+									border-color: #00c2c7;
+									&.active{
+										transition: 200ms;
+										background-color: #00c2c7;
+									}
+								}
+								&[data-skin-pick="green"] {
+									border-color: #008000;
+									&.active{
+										transition: 200ms;
+										background-color: #008000;
+									}
+								}
+								&[data-skin-pick="purple"] {
+									border-color: #A020F0;
+									&.active{
+										transition: 200ms;
+										background-color: #A020F0;
+									}
+								}
+								&[data-skin-pick="dark"] {
+									border-color: #000000;
+									&.active{
+										transition: 200ms;
+										background-color: #000000;
+									}
+								}
+								&[data-skin-pick="light"] {
+									border-color: #cccccc;
+									&.active{
+										transition: 200ms;
+										background-color: #cccccc;
+									}
+								}
 							}
 						}
 					}
@@ -433,6 +512,32 @@ html body {
 		}
 		@media print {
 			display: none;
+		}
+	}
+
+	&[data-skin="dark"] {
+		--text-color: #ffffff;
+		--primary-color: #000000;
+		--secondary-color: #333333;
+		--highlight-color: #000000;
+		background-color: #333333;
+		* {
+			color: #f1f1f1 !important;
+			border-color: #000000;
+		}
+		.entrance .first-sight .timeline ul .xp__right::before {
+			background-color: #000000;
+		}
+		.hobbies__content .hb-item img,
+		.entrance .first-sight .about ul li img,
+		.entrance .presentation__body ul li img {
+			filter: invert(1);
+		}
+		.entrance .first-sight .timeline ul .xp__right {
+			border-color: #000000;
+		}
+		footer {
+			background-color: #000000;
 		}
 	}
 }
