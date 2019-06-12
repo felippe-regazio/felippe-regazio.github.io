@@ -251,6 +251,13 @@ html body .main .skills__table {
 html body .main .skills__table ul li.mark {
   color: var(--highlight-color);
 }
+html body .main .skills .english h5 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+html body .main .skills .english h5.mark {
+  font-weight: 500;
+}
 @media screen and (max-width: 900px) {
   html body .main .skills {
     margin-top: 0;
@@ -433,13 +440,15 @@ html body footer {
   min-height: 300px;
   background-color: #222222;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 42px;
 }
 html body footer .footer__content {
   color: #fafafa;
+  padding: 14px;
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
+  color: #ffffff;
 }
 html body footer .footer__content p {
   margin: 0;

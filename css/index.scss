@@ -240,6 +240,15 @@ html body {
 					color: var(--highlight-color);
 				}
 			}
+			.english {
+				h5 {
+					font-size: 18px;
+					margin-bottom: $gutter/2;
+					&.mark {
+						font-weight: 500;
+					}
+				}
+			}
 			@media screen and(max-width: 900px) {
 				margin-top: 0;
 			}
@@ -410,12 +419,14 @@ html body {
 		min-height: 300px;
 		background-color: #222222;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-end;
 		margin-top: 42px;
 		.footer__content {
 			color: #fafafa;
+			padding: $gutter;
 			text-align: center;
-			font-size: 11px;
+			font-size: 14px;
+			color: #ffffff;
 			p {
 				margin: 0;
 			}
