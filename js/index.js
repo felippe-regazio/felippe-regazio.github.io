@@ -32,5 +32,12 @@
 			localStorage.setItem('felipperegaziocv', currentSkin);
 			document.body.dataset.skin = currentSkin;
 		});
+		color.addEventListener('touchstart', function (e) {
+			document.querySelector('[data-skin-pick].active').classList.remove('active');
+			color.classList.add('active');
+			currentSkin = color.dataset.skinPick;
+			localStorage.setItem('felipperegaziocv', currentSkin);
+			document.body.dataset.skin = currentSkin;
+		});
 	});
 })();
