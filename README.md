@@ -1,3 +1,3 @@
 # Front Page
 
-About Felippe Regazio
+Felippe Regazio CV
