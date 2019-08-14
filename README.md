@@ -1,1 +1,1 @@
-Felippe Regazio Personal CV
+Felippe Regazio CV
