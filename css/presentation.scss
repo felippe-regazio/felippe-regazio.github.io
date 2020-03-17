@@ -1,0 +1,128 @@
+html body {
+
+	&[data-skin="purple"] {
+		--text-color: #000000;
+		--primary-color: #f3e7f3;
+		--secondary-color: #A020F0;
+		--highlight-color: #A020F0;
+	}
+
+	$gutter: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	* {
+		box-sizing: border-box;
+		letter-spacing: 1.5px;
+	}
+
+	.main {
+		.entrance {
+			display: grid;
+			grid-template-columns: 355px auto;
+			@media screen and(max-width:1023px) {
+				display: block;
+			}
+			.presentation {
+				padding: $gutter*2;
+				width: 100%;
+				height: auto;
+				text-align: center;
+				background-color: var(--primary-color);
+				min-height: 300px;
+				max-height: 720px;
+				color: var(--text-color);
+				position: sticky;
+				top: 0;
+				left: 0;
+				@media screen and(max-width:1023px) {
+					position: initial;
+				}
+				&__head {
+					h1 {
+						font-size: 60px;
+						margin-bottom: $gutter*2;
+					}
+					figure {
+						margin: 0;
+						margin-bottom: $gutter*2;
+						img {
+							display: block;
+							border-radius: 100%;
+							border-bottom: $gutter*2;
+							position: relative;
+							margin: 0 auto;
+							max-width: 100%;
+							width: 200px;
+							height: 200px;
+						}
+					}
+				}
+				&__body {
+					h5 {
+						font-size: 24px;
+						border-bottom: solid 1px var(--text-color);
+						padding-bottom: $gutter*2;
+						margin-bottom: $gutter*2;
+					}
+					p {
+						text-align: left;
+						border-bottom: solid 1px var(--text-color);
+						padding-bottom: $gutter;
+						margin-bottom: $gutter*2;
+					}
+					ul {
+						list-style: none;
+						text-align: left;
+						li {
+							display: flex;
+							img {
+								height: 20px;
+								width: 20px;
+								margin-right: $gutter/2;
+							}
+							a {
+								text-decoration: none;
+								color: #000000;
+							}
+						}
+					}
+				}
+			}
+			.first-sight {
+				padding: $gutter*2;
+				padding-bottom: 2px;
+				.not-online {
+					display: none;
+				}
+				h2 {
+					color: var(--secondary-color);
+				}
+				.about {
+					ul {
+						display: flex;
+						align-items: center;
+						list-style: none;
+						li {
+							display: flex;
+							align-items: center;
+							list-style: none;
+							margin-right: $gutter;
+							margin-bottom: $gutter;
+							img {
+								height: 26px;
+								width: 26px;
+								margin-right: $gutter/2;
+							}
+							a {
+								color: var(--secondary-color);
+							}
+						}
+						@media screen and (max-width: 900px) {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}

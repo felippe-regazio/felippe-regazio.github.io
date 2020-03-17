@@ -1,0 +1,123 @@
+html body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html body[data-skin=purple] {
+  --text-color: #000000;
+  --primary-color: #f3e7f3;
+  --secondary-color: #A020F0;
+  --highlight-color: #A020F0;
+}
+html body * {
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+}
+html body .main .entrance {
+  display: grid;
+  grid-template-columns: 355px auto;
+}
+@media screen and (max-width: 1023px) {
+  html body .main .entrance {
+    display: block;
+  }
+}
+html body .main .entrance .presentation {
+  padding: 28px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: var(--primary-color);
+  min-height: 300px;
+  max-height: 720px;
+  color: var(--text-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1023px) {
+  html body .main .entrance .presentation {
+    position: initial;
+  }
+}
+html body .main .entrance .presentation__head h1 {
+  font-size: 60px;
+  margin-bottom: 28px;
+}
+html body .main .entrance .presentation__head figure {
+  margin: 0;
+  margin-bottom: 28px;
+}
+html body .main .entrance .presentation__head figure img {
+  display: block;
+  border-radius: 100%;
+  border-bottom: 28px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+}
+html body .main .entrance .presentation__body h5 {
+  font-size: 24px;
+  border-bottom: solid 1px var(--text-color);
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+html body .main .entrance .presentation__body p {
+  text-align: left;
+  border-bottom: solid 1px var(--text-color);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+}
+html body .main .entrance .presentation__body ul {
+  list-style: none;
+  text-align: left;
+}
+html body .main .entrance .presentation__body ul li {
+  display: flex;
+}
+html body .main .entrance .presentation__body ul li img {
+  height: 20px;
+  width: 20px;
+  margin-right: 7px;
+}
+html body .main .entrance .presentation__body ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+html body .main .entrance .first-sight {
+  padding: 28px;
+  padding-bottom: 2px;
+}
+html body .main .entrance .first-sight .not-online {
+  display: none;
+}
+html body .main .entrance .first-sight h2 {
+  color: var(--secondary-color);
+}
+html body .main .entrance .first-sight .about ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+html body .main .entrance .first-sight .about ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+html body .main .entrance .first-sight .about ul li img {
+  height: 26px;
+  width: 26px;
+  margin-right: 7px;
+}
+html body .main .entrance .first-sight .about ul li a {
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 900px) {
+  html body .main .entrance .first-sight .about ul {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=presentation.css.map */
