@@ -5,5 +5,4 @@ git add .
 git commit -m "deploy"
 git push origin gh-pages --force
 git checkout master
-git checkout .
 git branch -D gh-pagesc
