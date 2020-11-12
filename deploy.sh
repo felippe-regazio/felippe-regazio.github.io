@@ -1,7 +1,7 @@
 git push origin :gh-pages
 git checkout -b gh-pages
 rm README.md
-mv dist .
+mv -r dist/* .
 git add .
 git commit -m "deploy"
 git push origin gh-pages
