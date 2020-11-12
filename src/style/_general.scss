@@ -1,0 +1,50 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	* {
+		box-sizing: border-box;
+		letter-spacing: 1.5px;
+	}
+}
+
+.entrance {
+	display: grid;
+	margin-bottom: 24px;
+	grid-template-columns: 355px auto;
+	@media screen and(max-width:1023px) {
+		display: block;
+	}
+	@media print {
+		display: block;
+	}
+	.first-sight {
+		padding: $gutter*2;
+		padding-bottom: 2px;
+		.on-printed {
+			display: none;
+			@media print {
+				display: initial;
+			}
+		}
+		h2 {
+			color: var(--secondary-color);
+		}
+		@media print {
+			margin-top: -40px;
+		}
+	}
+}
+
+p {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+svg[class*="fa"] {
+	margin-right: 8px;
+	width: 24px !important;
+	height: 24px !important;
+}

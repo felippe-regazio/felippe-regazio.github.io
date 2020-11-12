@@ -1,0 +1,31 @@
+{
+  "name": "felippe-regazio.github.io",
+  "version": "1.0.0",
+  "description": "Felippe Regazio's Online CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "rm -rf ./dist; rm -rf ./cache; parcel serve ./src/* --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felippe-regazio/felippe-regazio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felippe-regazio/felippe-regazio.github.io/issues"
+  },
+  "homepage": "https://github.com/felippe-regazio/felippe-regazio.github.io#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.4",
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "posthtml-include": "^1.6.0",
+    "sass": "^1.29.0"
+  }
+}

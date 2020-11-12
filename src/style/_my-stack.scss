@@ -1,0 +1,25 @@
+.stack {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 46px 0;
+    li {
+      margin: 8px;
+      width: 120px;
+      text-align: center;
+      svg {
+        display: inline-block;
+        width: 52px !important;
+        height: 52px !important;
+        fill: currentColor;
+      }
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}

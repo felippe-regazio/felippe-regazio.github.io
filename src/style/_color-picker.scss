@@ -1,0 +1,44 @@
+.color-picker {
+  p {
+    margin-bottom: $gutter*2;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: $gutter;
+    li {
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      border-radius: 100%;
+      border: solid 3px;
+      background-color: transparent;
+      &:not(:last-child) {
+        margin-right: $gutter;
+      }
+      
+      $skins: (
+        "blue": #00c2c7, 
+        "green": #008000, 
+        "purple":  #A020F0,
+        "dark": #000000,
+        "light": #cccccc,
+      );
+
+      @each $name, $color in $skins {
+        &[data-skin-pick="#{$name}"] {
+          border-color: $color;
+          &.active{
+            background-color: $color;
+          }
+        }
+      }
+    }
+  }
+  @media print {
+    display: none;
+  }
+}

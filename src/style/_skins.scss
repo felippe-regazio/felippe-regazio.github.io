@@ -1,0 +1,66 @@
+body {
+	
+	&[data-skin="blue"] {
+		--text-color: #000000;
+		--primary-color: #ecfafa;
+		--secondary-color: #00c2c7;
+		--highlight-color: #00c2c7;
+	}
+	
+	&[data-skin="purple"] {
+		--text-color: #000000;
+		--primary-color: #f3e7f3;
+		--secondary-color: #A020F0;
+		--highlight-color: #A020F0;
+	}
+	
+	&[data-skin="green"] {
+		--text-color: #000000;
+		--primary-color: #d6ead6;
+		--secondary-color: #008000;
+		--highlight-color: #008000;
+	}
+	
+	&[data-skin="light"] {
+		--primary-color: #f6f6f6;
+		--secondary-color: #333333;
+		--highlight-color: #888888;
+		--text-color: #000000;
+	}
+	
+	&[data-skin="dark"] {
+		background-color: #222222;
+		--text-color: #ffffff;
+		--primary-color: #000000;
+		--secondary-color: #333333;
+		--highlight-color: #000000;
+		* {
+			color: #f1f1f1 !important;
+			border-color: #000000;
+		}
+		.basic-info h2 {
+			border-color: #ffffff;
+		}
+		.entrance .first-sight .timeline ul .xp__right {
+			border-color: #000000;
+			&::before {
+				background-color: #000000;
+			}
+		}
+		.hobbies__content .hb-item {
+			img {
+				filter: invert(1);
+			}
+		}
+		footer {
+			background-color: #000000;
+		}
+	}
+	
+	@media print {
+		--text-color: #000000;
+		--primary-color: #000000;
+		--secondary-color: #000000;
+		--highlight-color: #000000;
+	}  
+}

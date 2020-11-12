@@ -1,0 +1,26 @@
+.about {
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin-right: $gutter;
+      margin-bottom: $gutter;
+      a {
+        color: var(--secondary-color);
+      }
+    }
+    @media screen and (max-width: 900px) {
+      display: block;
+    }
+    @media print {
+      display: block;
+      li {
+        display: none;
+      }
+    }
+  }
+}
