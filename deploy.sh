@@ -1,6 +1,6 @@
 git push origin :gh-pages
 git checkout -b gh-pages
-mv -t ./dist/* .
+mv ./dist/* .
 git add .
 git commit -m "deploy"
 git push origin gh-pages --force
