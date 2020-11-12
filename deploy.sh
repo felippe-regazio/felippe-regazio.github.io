@@ -1,4 +1,4 @@
-git checkout -b gh-pages
+git checkout gh-pages
 git reset --hard origin/master
 npm run build
 mv ./dist/* .
