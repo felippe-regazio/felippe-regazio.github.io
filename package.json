@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "rm -rf ./dist; rm -rf ./cache; parcel serve ./src/* --no-cache"
+    "serve": "rm -rf ./dist; rm -rf ./.cache; parcel serve ./src/* --no-cache",
+    "build": "rm -rf ./dist; rm -rf ./.cache; parcel build ./src/* --public-url ./"
   },
   "repository": {
     "type": "git",
